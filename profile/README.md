@@ -1,16 +1,17 @@
 # Plant Butler
 
-A hobby plant-watering system: an Arduino UNO R4 WiFi with one soil-moisture sensor per pot and a
-pump feeding a rotary manifold, a small Python backend on a Synology NAS that stores the readings
-and decides when to water, and an Android app to look at the plants and water them by hand.
+A hobby system that waters house plants. An Arduino UNO R4 WiFi with one soil-moisture sensor per
+pot, a pump and a manifold that sends water to one pot at a time; a small Python backend on a
+Synology NAS (the home server) that stores the readings, decides when to water and sends alerts;
+an Android app to look at the plants and water by hand.
 
-**Start at [plantbutler/plantbutler](https://github.com/plantbutler/plantbutler)** — the umbrella
-repository: what it is, the decisions it rests on, and the five repositories pinned as submodules.
+**Start at [plantbutler/plantbutler](https://github.com/plantbutler/plantbutler)**: what the
+system is, how the parts talk, how to get started, and the decisions it rests on.
 
-| repo | what it is |
+| repository | what it is |
 | --- | --- |
-| [plan](https://github.com/plantbutler/plan) | the Shape Up plan — what is bet, what waits on what, and why |
-| [firmware](https://github.com/plantbutler/firmware) | PlatformIO / Arduino UNO R4 WiFi |
-| [backend](https://github.com/plantbutler/backend) | Python container + SQLite on the NAS |
-| [app](https://github.com/plantbutler/app) | Kotlin + Jetpack Compose |
-| [cad](https://github.com/plantbutler/cad) | OpenSCAD, KiCad, BOM, bench notes |
+| [firmware](https://github.com/plantbutler/firmware) | the board: PlatformIO, C++ |
+| [backend](https://github.com/plantbutler/backend) | the service: Python, SQLite, one container |
+| [app](https://github.com/plantbutler/app) | the phone: Kotlin, Jetpack Compose |
+| [cad](https://github.com/plantbutler/cad) | the hardware: OpenSCAD parts, wiring, parts list |
+| [plan](https://github.com/plantbutler/plan) | what is being built and in what order |
